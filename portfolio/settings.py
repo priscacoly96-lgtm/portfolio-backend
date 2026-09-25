@@ -137,6 +137,7 @@ MAILERS = {
 }
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://TON-URL-VERCEL.vercel.app",
 ]
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME'),
