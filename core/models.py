@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Skill(models.Model):
     CATEGORY_CHOICES = [
@@ -26,6 +25,7 @@ class Project(models.Model):
     github_url = models.URLField(blank=True)
     category = models.CharField(max_length=100, blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
+    details = models.TextField(blank=True)
 
     def __str__(self):
         return self.title
