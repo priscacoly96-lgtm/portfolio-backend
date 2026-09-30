@@ -26,6 +26,9 @@ class Project(models.Model):
     category = models.CharField(max_length=100, blank=True, default='')
     created_at = models.DateTimeField(auto_now_add=True)
     details = models.TextField(blank=True)
+    featured = models.BooleanField(default=False)
+    views = models.PositiveIntegerField(default=0)
+    likes = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return self.title
