@@ -152,3 +152,6 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+BREVO_API_KEY = config("BREVO_API_KEY", default="")
+BREVO_SENDER_EMAIL = config("BREVO_SENDER_EMAIL", default="")
+CONTACT_RECEIVER_EMAIL = config("CONTACT_RECEIVER_EMAIL", default="")
